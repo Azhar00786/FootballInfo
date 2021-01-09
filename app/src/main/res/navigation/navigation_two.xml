@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_two"
+    app:startDestination="@id/singleTeamDetailFragment">
+
+    <fragment
+        android:id="@+id/headToHeadTeamDataFragment"
+        android:name="com.example.footballinfo.view.fragments.HeadToHeadTeamDataFragment"
+        android:label="HeadToHeadTeamDataFragment" >
+        <action
+            android:id="@+id/action_headToHeadTeamDataFragment_self"
+            app:destination="@id/headToHeadTeamDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamStandingsFragment"
+        android:name="com.example.footballinfo.view.fragments.TeamStandingsFragment"
+        android:label="TeamStandingsFragment" />
+    <fragment
+        android:id="@+id/singleTeamDetailFragment"
+        android:name="com.example.footballinfo.view.fragments.SingleTeamDetailFragment"
+        android:label="fragment_single_team_detail"
+        tools:layout="@layout/fragment_single_team_detail" />
+</navigation>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/countriesDisplayFragment"
+        android:name="com.example.footballinfo.view.fragments.CountriesDisplayFragment"
+        android:label="fragment_countries_display"
+        tools:layout="@layout/fragment_countries_display" >
+        <action
+            android:id="@+id/action_countriesDisplayFragment_self"
+            app:destination="@id/countriesDisplayFragment"
+            app:enterAnim="@anim/slide_in_top"
+            app:popUpTo="@id/countriesDisplayFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_countriesDisplayFragment_to_competitionsDataFragmant"
+            app:destination="@id/competitionsDataFragmant"
+            app:enterAnim="@anim/slide_in_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.footballinfo.view.fragments.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_countriesDisplayFragment"
+            app:destination="@id/countriesDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/competitionsDataFragmant"
+        android:name="com.example.footballinfo.view.fragments.CompetitionsDataFragmant"
+        android:label="fragment_competitions_data_fragmant"
+        tools:layout="@layout/fragment_competitions_data_fragmant" >
+        <action
+            android:id="@+id/action_competitionsDataFragmant_to_teamsDataFragmant"
+            app:destination="@id/teamsDataFragmant"
+            app:enterAnim="@anim/alerter_slide_in_from_left" />
+        <action
+            android:id="@+id/action_competitionsDataFragmant_self"
+            app:destination="@id/competitionsDataFragmant"
+            app:popUpTo="@id/competitionsDataFragmant"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamsDataFragmant"
+        android:name="com.example.footballinfo.view.fragments.TeamsDataFragmant"
+        android:label="fragment_teams_data_fragmant"
+        tools:layout="@layout/fragment_teams_data_fragmant" >
+        <argument
+            android:name="leagueId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_teamsDataFragmant_self"
+            app:destination="@id/teamsDataFragmant"
+            app:popUpTo="@id/teamsDataFragmant"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_teamsDataFragmant_to_forHandlingTeamData2"
+            app:destination="@id/forHandlingTeamData2" />
+    </fragment>
+    <activity
+        android:id="@+id/forHandlingTeamData2"
+        android:name="com.example.footballinfo.view.activity.ForHandlingTeamData"
+        android:label="activity_for_handling_team"
+        tools:layout="@layout/activity_for_handling_team" />
+</navigation>

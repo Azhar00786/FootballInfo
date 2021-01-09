@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/teamStandingsDataLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/forRV">
+
+        <TextView
+            android:id="@+id/teamStandingsNumberData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:fontFamily="@font/antic"
+            android:padding="10sp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/teamNameData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/teamStandingsNumberData"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/antic"
+            android:padding="10sp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/teamSymbolImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10sp" />
+
+        <RelativeLayout
+            android:id="@+id/expandableTeamStandingData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teamSymbolImage"
+            android:background="@android:color/darker_gray">
+
+            <TextView
+                android:id="@+id/leaguePoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:text="League Points:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/leaguePointsData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/matchesPlayed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leaguePoints"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:text="Matches Played:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/matchesPlayedData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leaguePointsData"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/leagueGA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/matchesPlayed"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:text="League GA:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/leagueGAData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/matchesPlayedData"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/leagueGF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leagueGA"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:text="League GF:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/leagueGFData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leagueGAData"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/leagueWins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leagueGFData"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:text="League Wins:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/leagueWinsData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leagueGFData"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/leagueLoss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leagueWins"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:text="League Losses:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/leagueLossData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leagueWinsData"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/leagueDraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leagueLoss"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:text="League Draws:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/leagueDrawData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leagueLossData"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/antic"
+                android:padding="10sp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

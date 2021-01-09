@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:coverflow="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainCountryFragLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:backgroundTint="@color/backgroundColorTwo"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".view.fragments.CountriesDisplayFragment">
+
+    <!--<androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        coverflow:layout_constraintGuide_percent="0.5"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/forProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            coverflow:constraint_referenced_ids="progressBar" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            coverflow:layout_constraintBottom_toBottomOf="parent"
+            coverflow:layout_constraintEnd_toEndOf="parent"
+            android:indeterminate="true"
+            coverflow:layout_constraintStart_toStartOf="parent"
+            coverflow:layout_constraintTop_toTopOf="parent"
+            />-->
+
+    <ImageView
+        android:id="@+id/countryFragmentImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:src="@drawable/countryfragment"
+        android:transitionName="logo_image" />
+
+    <TextView
+        android:id="@+id/countryFragTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/bungee"
+        android:text="Choose Country"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:transitionName="logo_text" />
+
+    <TextView
+        android:id="@+id/countryFragPara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/antic"
+        android:paddingBottom="10sp"
+        android:text="Swipe and select one country from below options to display information about local leagues in that country."
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
+        android:id="@+id/countryImageCoverflow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:foregroundGravity="center"
+        coverflow:coverHeight="120dp"
+        coverflow:coverWidth="200dp"
+        coverflow:maxScaleFactor="1.5"
+        coverflow:reflectionGap="0px"
+        coverflow:reflectionOpacity="0"
+        coverflow:rotationThreshold="0.5"
+        coverflow:scalingThreshold="0.5"
+        coverflow:spacing="0.6" />
+
+    <TextSwitcher
+        android:id="@+id/countryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:visibility="visible" />
+</LinearLayout>

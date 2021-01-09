@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1046196991853",
+    "firebase_url": "https://footballinfo-a7735.firebaseio.com",
+    "project_id": "footballinfo-a7735",
+    "storage_bucket": "footballinfo-a7735.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046196991853:android:839781b89766a68d5e4c64",
+        "android_client_info": {
+          "package_name": "com.example.footballinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046196991853-gemtr1rdo72ouh20klqkebo53oqicm9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3vFTqXub3dcK4pqNht9b07ydIlUyob4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046196991853-gemtr1rdo72ouh20klqkebo53oqicm9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

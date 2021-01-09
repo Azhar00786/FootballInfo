@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/teamStandingsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_format_list_numbered_24"
+        android:title="Team Standing" />
+    <item
+        android:id="@+id/singleTeamDetailFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_view_list_24"
+        android:title="Team Details" />
+    <item
+        android:id="@+id/headToHeadTeamDataFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_compare_24"
+        android:title="Head To Head" />
+
+
+</menu>
